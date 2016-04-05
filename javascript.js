@@ -17,7 +17,7 @@ $(function(){
 });
 
 $(function(){
-$("#size_button").on("click", function() {
+$("#resize").on("click", function() {
   $(".square").remove();
   var k = prompt("Please enter the new width (between 10-40)");
   i = 0;

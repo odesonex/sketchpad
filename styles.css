@@ -52,7 +52,7 @@ button {
   	border-bottom-width: 3px;
     margin-top: 10px;
   }
-  #size_button {
+  #resize {
     display: inline;
   }
   #clear {
