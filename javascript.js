@@ -4,13 +4,13 @@ var k=16
 
 $(function(){
   var color = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
-  $("#wrapper").on("mouseenter", ".square", function(){
+  $("#content").on("mouseenter", ".square", function(){
     $(this).css("background-color", color);
   });
     while(i <= k*k){
     var size=768/k-4;
     $(".square").css({"width": size, "height": size});
-    $("<div>").addClass("square").appendTo("#wrapper");
+    $("<div>").addClass("square").appendTo("#content");
     i++;
     }
 
@@ -22,14 +22,14 @@ $("#resize").on("click", function() {
   var k = prompt("Please enter the new width (between 10-40)");
   i = 0;
   var color = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
-  $("#wrapper").on("mouseenter", ".square", function(){
+  $("#content").on("mouseenter", ".square", function(){
 
     $(this).css("background-color", color);
   });
   while(i <= k*k){
     var size=768/k-4;
   $(".square").css({"width": size, "height": size});
-  $("<div>").addClass("square").appendTo("#wrapper");
+  $("<div>").addClass("square").appendTo("#content");
   i++;
 }
 });
@@ -37,7 +37,7 @@ $("#resize").on("click", function() {
 $(function(){
 $("#w_button").on("click", function() {
   var color = "white";
-  $("#wrapper").on("mouseenter", ".square", function(){
+  $("#content").on("mouseenter", ".square", function(){
 
     $(this).css("background-color", color);
   });
@@ -53,7 +53,7 @@ $("#clear").on("click", function() {
 $(function(){
 $("#random").on("click", function() {
   var color = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
-  $("#wrapper").on("mouseenter", ".square", function(){
+  $("#content").on("mouseenter", ".square", function(){
     $(this).css("background-color", color);
   });
 
@@ -62,7 +62,7 @@ $("#random").on("click", function() {
 $(function(){
 $("#rainbow").on("click", function() {
   var color = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
-  $("#wrapper").on("mouseenter", ".square", function(){
+  $("#content").on("mouseenter", ".square", function(){
     $(this).css("background-color", getRandomColor());
   });
 
