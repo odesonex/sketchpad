@@ -19,7 +19,7 @@ $(function(){
 $(function(){
 $("#resize").on("click", function() {
   $(".square").remove();
-  var k = prompt("Please enter the new width (between 10-40)");
+  var k = prompt("Please enter a new width:)");
   i = 0;
   var color = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
   $("#content").on("mouseenter", ".square", function(){
